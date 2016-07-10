@@ -7,10 +7,13 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	<package name="default" namespace="/" extends="struts-default">
-		<action name="helloworld" class="com.sunyahui.action.HelloWorldAction">
+	<package name="default"  extends="struts-default">
+		<action name="helloworld_*" method="{1}" class="com.sunyahui.action.HelloWorldAction">
 			<result>/result.jsp</result>
+			<result name="add">/{1}.jsp</result>
+			<result name="update">/{1}.jsp</result>
 		</action>
+		
 	</package>
 
 

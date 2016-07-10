@@ -3,6 +3,15 @@ package com.sunyahui.action;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloWorldAction  extends ActionSupport{
+	
+	
+	public String add(){
+		System.out.println("shuchu");
+		return "SUCCESS";
+	}
+	public String updatet(){
+		return "SUCCESS";
+	}
 
 	/**
 	 * 
