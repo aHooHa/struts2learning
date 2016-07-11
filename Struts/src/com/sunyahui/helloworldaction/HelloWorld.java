@@ -1,5 +1,7 @@
 package com.sunyahui.helloworldaction;
 
+import java.net.URLEncoder;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloWorld extends ActionSupport {
@@ -30,13 +32,15 @@ public class HelloWorld extends ActionSupport {
 
 	@Override
 	public String execute() throws Exception {
-		userName="liming";
+		userName=URLEncoder.encode("孙雅晖", "UTF-8");
 		message="sun of bitch";
 		return SUCCESS;
 	}
 
 
-	
+	public String add(){
+		return "message";
+	}
 
 
 	

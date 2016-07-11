@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-  ${param.username }
-  this is employee.jsp
-  姓名<input type="text"  name="xingming" >
+   this is message.jsp
 </body>
 </html>
