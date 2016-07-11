@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	${meg }
    this is message.jsp
 </body>
 </html>

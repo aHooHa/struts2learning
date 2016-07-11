@@ -5,8 +5,25 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	
-<!-- 全局视图
+  <constant name="struts.configuration.xml.reload" value="true"></constant>
+  <constant name="struts.devMode" value="true"></constant>
+  
+  <package name="yahui" extends="struts-default" namespace="/test">
+		<action name="sunh_*"  class="com.sunyahui.helloworldaction.HelloWorldAction"
+		method="{1}">
+			<param name="savepath">/image</param>
+			<result>/WEB-INF/page/message.jsp</result>
+		</action>
+	</package>
+<!-- 为Action属性注值
+	<package name="yahui" extends="struts-default" namespace="/test">
+		<action name="sunh"  class="com.sunyahui.helloworldaction.HelloWorldAction"
+		method="execute">
+			<param name="savepath">/image</param>
+			<result>/WEB-INF/page/message.jsp</result>
+		</action>
+	</package>
+ 全局视图
 <package name="base" extends="struts-default">
 		<global-results>
 			<result name="message">/WEB-INF/page/message.jsp</result>
