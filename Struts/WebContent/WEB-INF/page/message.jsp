@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	${meg }
-   this is message.jsp
+${birthday}
+ bitch
 </body>
 </html>

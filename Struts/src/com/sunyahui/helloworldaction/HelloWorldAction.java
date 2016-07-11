@@ -1,6 +1,13 @@
 package com.sunyahui.helloworldaction;
 
+
+
+
+import java.util.Date;
+
 import com.opensymphony.xwork2.ActionSupport;
+
+
 
 public class HelloWorldAction extends ActionSupport {
 
@@ -9,36 +16,25 @@ public class HelloWorldAction extends ActionSupport {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private String savepath;
-	private String meg;
 	
-	
-	
+	private Date birthday;
 	
 
-
-	public String getMeg() {
-		return meg;
+	public Date getBirthday() {
+		return birthday;
 	}
 
-
-	public String getSavepath() {
-		return savepath;
+	public void setBirthday(Date birthday) {
+		System.out.println(birthday);
+		this.birthday = birthday;
 	}
 
-
-	public void setSavepath(String savepath) {
-		this.savepath = savepath;
-	}
-
-    public String addUI(){
-    	meg="addUI";
+	public String addUI(){
     	return "success";
     }
 	
 	@Override
 	public String execute() throws Exception {
-		meg="message";
 		return SUCCESS;
 	}
 	

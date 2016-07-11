@@ -8,6 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-  this is index.jsp 中国  <%= new Date()  %>>
+  <form action="<%=request.getContextPath() %>/test/sunh_execute.action" method="post">
+  	id:<input type="text" name="person.id">
+  	name:<input type="text" name="person.name">
+  	<input type="submit" value="提交">
+  </form>
 </body>
 </html>
